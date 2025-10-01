@@ -1,2 +1,67 @@
-body { font-family: Arial, sans-serif; max-width: 900px; margin: 40px auto; padding: 0 20px; line-height: 1.6; }
-header { text-align: center; margin-bottom: 20px; }
+/* Reset & Base */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Arial, sans-serif; line-height: 1.6; background: #f4f4f9; color: #333; }
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #4a90e2;
+  color: #fff;
+  padding: 15px 30px;
+}
+.navbar .logo { font-size: 1.5em; font-weight: bold; }
+.navbar nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
+}
+.navbar nav a:hover { text-decoration: underline; }
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #4a90e2, #50c9ce);
+  color: white;
+}
+.hero h2 { font-size: 2.5em; margin-bottom: 15px; }
+.hero p { font-size: 1.2em; margin-bottom: 20px; }
+.btn {
+  display: inline-block;
+  background: #fff;
+  color: #4a90e2;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.btn:hover { background: #eaeaea; }
+
+/* Cards Section */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+.card:hover { transform: translateY(-5px); }
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #333;
+  color: #fff;
+  margin-top: 30px;
+}
