@@ -1,16 +1,49 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>My First GitHub Pages Site</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My GitHub Pages Site</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header><h1>Welcome to my site</h1></header>
-  <main>
-    <p>This site is hosted with GitHub Pages.</p>
-  </main>
-  <footer><small>&copy; 2025 Your Name</small></footer>
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <h1 class="logo">MySite</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Projects</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Welcome to My First GitHub Pages Website</h2>
+    <p>This is a simple static site hosted for free on GitHub Pages. 🚀</p>
+    <a href="#projects" class="btn">See My Work</a>
+  </section>
+
+  <!-- Projects / Cards -->
+  <section class="cards" id="projects">
+    <div class="card">
+      <h3>Project One</h3>
+      <p>A simple demo project with HTML and CSS.</p>
+    </div>
+    <div class="card">
+      <h3>Project Two</h3>
+      <p>Learning GitHub Pages deployment.</p>
+    </div>
+    <div class="card">
+      <h3>Project Three</h3>
+      <p>Exploring web development basics.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 MySite | Built with ❤️ using GitHub Pages</p>
+  </footer>
 </body>
 </html>
